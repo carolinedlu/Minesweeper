@@ -1,0 +1,130 @@
+  @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:800');
+
+
+
+.gameTitle {
+    font-family: 'Press Start 2P', open-sans;  
+    color: #4B9CD3;
+    text-align: center;
+    font-size: 58px;
+    text-shadow:
+    -1px -1px 0 #13294B,
+    1px -1px 0 #13294B,
+    -1px 1px 0 #13294B,
+    1px 1px 0 #13294B;  
+} table {
+    border: 1px solid #13294B;
+} td {
+    text-align: center; 
+    vertical-align: middle;
+} .mineButton {
+  } .bombButton {
+    background-color: #4B9CD3;
+    height: 25px;
+    width: 25px;
+    border-width: 1px;  
+    border-style:outset;
+  } .revealedBomb {
+    background-image: url('BombIcon.png');
+    background-size: 24px;
+    background-color: #E1E1E1;
+  } .emptyButton {
+    background-color: #4B9CD3;
+    height: 25px;
+    width: 25px;
+    border-width: 1px;  
+    border-style:outset;
+  } .togg {
+    background-image: url('FlagIcon.png');
+    background-size: 23px;
+    background-color: #ffffff;
+  } .noAdjacentBombs {
+    background-image: url('MinecraftRock.png');
+    background-size: 24px;
+    background-color: #a8e7ff;
+  } .adjCountRevealed {
+    background-color: #13294B;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: center;
+  } .mineCount {
+    font-size: 14px;
+  } .text {
+    font-family: 'Roboto', sans-serif; 
+    font-weight:800;
+    font-size: 16px;
+    color: #13294B;
+    text-align: center;
+  } #restart {
+    background-color: #13294B;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    height: 35px;
+    vertical-align: middle;
+    font-family: 'Press Start 2P', open-sans;  
+    font-size: 18px;
+    text-align: center;
+  } #buttonTable {
+    margin: 0 auto;
+    border: 2px solid #13294B;
+  } #highScores {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', open-sans;  
+  } #firstScore {
+    font-family: 'Press Start 2P', open-sans;  
+    font-size: 14px;
+  } body {
+    background-color: #edf7ff;
+  } #instructionsTitle {
+    font-family: 'Press Start 2P', open-sans;  
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  } .instructions {
+    font-size: 14px;
+    text-align: left;
+    border: 2px dotted #13294B;
+    padding-left: 25px;
+    padding-right: 25px;
+  } .howManyMines {
+    font-weight: bold;
+  } .boardSizeTitle {
+    font-weight: bold;
+  } #scoreBox {
+    border: 2px dotted #13294B;
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+  } #timerBox {
+    border: 2px dotted #13294B;
+    width: 125px;
+    margin: 0 auto;
+    display: none;
+  } #timerTitle {
+    font-family: 'Press Start 2P', open-sans;  
+  } #timer {
+    font-family: 'Press Start 2P', open-sans;  
+    font-size: 18px;
+  } .submitButton {
+    background-color: #4B9CD3;
+    color: #ffffff;
+    font-size: 12px;
+  } #nCols {
+    width: 130px;
+    font-size: 12px;
+    text-align: center;
+  } #nRows {
+    width: 130px;
+    font-size: 12px;
+    text-align: center;
+  } #numMines {
+    width: 130px;
+    font-size: 12px;
+    text-align: center;
+  }
