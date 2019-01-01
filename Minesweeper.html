@@ -1,0 +1,93 @@
+<html lang="en-US"><head></head><body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="A3clu123.js"></script>
+<link rel="stylesheet" type="text/css" href="A3clu123.css">
+<title class="pageTitle"> Tar Heel Minesweeper</title>
+
+
+<h1 class="gameTitle"> Tar Heel Minesweeper </h1>
+
+<div class="text">
+<div id="scoreBox">
+<div id="highScores"> <br>HIGH SCORE: </div>
+<br>
+<div id="noScores">No one has won yet.</div>
+<br>
+<div id="firstScore"></div>
+<br>
+</div>
+<br>
+
+<button id="restart" style="display:none;" onclick="restartGame()">RESTART GAME</button>
+<br>
+
+<div id="mRem" style="display:none;">
+<span class="numMines"> You asked for </span> <span id="numBombsRequested"></span> <span class="numMines"> bomb(s), and have marked </span> <span id="numBombsMarked"></span><span class="numMines"> mines as bomb(s), so there are likely </span><span id="remBombs"></span><span class="numMines"> bombs remaining.</span>
+</div>
+<br>
+
+<div class="attachTable"></div>
+
+<table id="buttonTable" oncontextmenu="return false;">
+</table>
+<br>
+
+<div id="timerBox">
+<div id="timerTitle" style="display:none;"><br>TIMER<br><br></div>
+<div id="timer"></div>
+<br>
+</div>
+<br>
+
+<p class="boardSizeTitle">Select what size minefield you would like.</p>
+
+<p class="howManyColumns">Columns: </p>
+<input type="number" id="nCols" min="8" max="40" placeholder="Number of columns">
+<br>
+<p class="howManyRows">Rows: </p>
+<input type="number" id="nRows" min="8" max="30" placeholder="Number of rows">
+
+<br>
+<br>
+
+<p class="howManyMines">Select the number of bombs you would like and press "Submit."</p>
+<div class="centered">
+
+<input type="number" id="numMines" placeholder="Number of mines" class="numMinesInput" min="1">
+<script>     
+
+function calcMineMax() {
+    var rowNum = document.getElementById('nRows').valueAsNumber;
+    var colNum = document.getElementById('nCols').valueAsNumber;
+    var maxBombs = (rowNum*colNum)-1;
+    document.getElementById('numMines').setAttribute('max', maxBombs);
+}
+    
+</script>
+<button type="button" class="submitButton" onclick="drawMinefield()">Submit</button> <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="instructions"> <div id="instructionsTitle"><br>HOW TO PLAY</div>
+<br>
+You have a rectangular field of buttons. Under some of these buttons are mines.<br><br>
+If you left click a button covering a mine, you lose and the game is over.<br><br>
+If you left click a button that is adjacent to at least one mine, the button is replaced with a label indicating the number of adjacent mines.<br><br>
+If the square is not adjacent to any mines, the adjacent buttons that have not already been clicked are automatically pressed.<br><br>
+You can mark a button as a mine by&nbsp;shift left-clicking on the button.<br><br>
+A marked button does not do anything if left-clicked.<br><br>
+The game ends when you clear/left-click all of the spaces that do not contain mines and mark all of the spaces with mines.<br><br>
+If you left-click on cleared spaces that have a label indicating adjacent bombs:<br><br>
+If the number of adjacent spaces that have been marked as bombs equals the number indicated by the label, adjacent spaces that have not been cleared and are not marked as bombs will be automatically left-clicked.<br><br>
+If the number of adjacent spaces that have been marked as bombs does not equal the number indicated by the label, nothing happens.<br><br>
+</div>
+</div>
+
+
+</body></html>
